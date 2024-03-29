@@ -3,9 +3,12 @@ import type { OrderItem } from '../types'
 
 export default function useOrder() {
    const [order, setOrder] = useState<OrderItem[]>([])
-   const [total, setTotal] = useState(0)
+
+   const addItem = () => {
+      console.log('Agrengando...')
+   }
 
    return {
-
+      addItem,
    }
 }
