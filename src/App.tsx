@@ -1,4 +1,4 @@
-import MenuItem from "./components/MenuItem"
+import MenuItems from "./components/MenuItems"
 import OrderContents from "./components/OrderContents"
 import OrderTotals from "./components/OrderTotals"
 import TipPorcentageForm from "./components/TipPorcentageForm"
@@ -22,7 +22,7 @@ function App() {
 
           <div className="space-y-3 mt-10">
             {menuItems.map(item => (
-              <MenuItem 
+              <MenuItems 
                 key={item.id}
                 item={item}
                 addItem={addItem}
